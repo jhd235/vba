@@ -1,0 +1,85 @@
+Sub Main()
+CheckValues0
+CheckValues1
+CheckValues2
+End Sub
+
+Sub CheckValues0()
+    Dim rwIndex As Integer
+    Dim colIndex As Integer
+    For rwIndex = 1 To 438
+            For colIndex = 1 To 200
+                If Cells(rwIndex, colIndex).Value = "12/12" Then _
+                    Cells(rwIndex, colIndex).Interior.ColorIndex = 37
+                If Cells(rwIndex, colIndex).Value = "7/7" Then _
+                    Cells(rwIndex, colIndex).Interior.ColorIndex = 37
+                If Cells(rwIndex, colIndex).Value = "5/5" Then _
+                    Cells(rwIndex, colIndex).Interior.ColorIndex = 37
+                If Cells(rwIndex, colIndex).Value = "12/5" Then _
+                    Cells(rwIndex, colIndex).Interior.ColorIndex = 37
+                If Cells(rwIndex, colIndex).Value = "12/13" Then _
+                    Cells(rwIndex, colIndex).Interior.ColorIndex = 37
+                 If Cells(rwIndex, colIndex).Value = "12/14" Then _
+                    Cells(rwIndex, colIndex).Interior.ColorIndex = 37
+                If Cells(rwIndex, colIndex).Value = "12/15" Then _
+                    Cells(rwIndex, colIndex).Interior.ColorIndex = 37
+                If Cells(rwIndex, colIndex).Value = "12/16" Then _
+                    Cells(rwIndex, colIndex).Interior.ColorIndex = 37
+                If Cells(rwIndex, colIndex).Value = "12/7" Then _
+                    Cells(rwIndex, colIndex).Interior.ColorIndex = 37
+            Next colIndex
+    Next rwIndex
+End Sub
+Sub CheckValues1()
+    Dim rwIndex As Integer
+    Dim colIndex As Integer
+    For rwIndex = 1 To 438
+            For colIndex = 1 To 200
+                If Cells(rwIndex, colIndex).Value = "12/12" Then _
+                    Cells(rwIndex + 1, colIndex).Value = "12"
+                If Cells(rwIndex, colIndex).Value = "7/7" Then _
+                    Cells(rwIndex + 1, colIndex).Value = "7"
+                If Cells(rwIndex, colIndex).Value = "5/5" Then _
+                    Cells(rwIndex + 1, colIndex).Value = "5"
+                If Cells(rwIndex, colIndex).Value = "12/5" Then _
+                    Cells(rwIndex + 1, colIndex).Value = "5"
+                If Cells(rwIndex, colIndex).Value = "12/13" Then _
+                    Cells(rwIndex + 1, colIndex).Value = "13"
+                If Cells(rwIndex, colIndex).Value = "12/14" Then _
+                    Cells(rwIndex + 1, colIndex).Value = "14"
+                If Cells(rwIndex, colIndex).Value = "12/15" Then _
+                    Cells(rwIndex + 1, colIndex).Value = "15"
+                If Cells(rwIndex, colIndex).Value = "12/16" Then _
+                    Cells(rwIndex + 1, colIndex).Value = "16"
+                If Cells(rwIndex, colIndex).Value = "12/7" Then _
+                    Cells(rwIndex + 1, colIndex).Value = "7"
+            Next colIndex
+    Next rwIndex
+End Sub
+Sub CheckValues2()
+    Dim rwIndex As Integer
+    Dim colIndex As Integer
+    For rwIndex = 1 To 438
+            For colIndex = 1 To 200
+                If Cells(rwIndex, colIndex).Value = "12/12" Then _
+                    Cells(rwIndex, colIndex).Value = "12"
+                If Cells(rwIndex, colIndex).Value = "7/7" Then _
+                    Cells(rwIndex, colIndex).Value = "7"
+                If Cells(rwIndex, colIndex).Value = "5/5" Then _
+                    Cells(rwIndex, colIndex).Value = "5"
+                If Cells(rwIndex, colIndex).Value = "12/5" Then _
+                    Cells(rwIndex, colIndex).Value = "12"
+                If Cells(rwIndex, colIndex).Value = "12/13" Then _
+                    Cells(rwIndex, colIndex).Value = "12"
+                If Cells(rwIndex, colIndex).Value = "12/14" Then _
+                    Cells(rwIndex, colIndex).Value = "12"
+                If Cells(rwIndex, colIndex).Value = "12/15" Then _
+                    Cells(rwIndex, colIndex).Value = "12"
+                If Cells(rwIndex, colIndex).Value = "12/16" Then _
+                    Cells(rwIndex, colIndex).Value = "12"
+                If Cells(rwIndex, colIndex).Value = "12/7" Then _
+                    Cells(rwIndex, colIndex).Value = "12"
+            Next colIndex
+    Next rwIndex
+End Sub
+
